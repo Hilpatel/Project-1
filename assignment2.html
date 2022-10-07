@@ -1,0 +1,70 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assignment2.css">
+    <title>Assignment-2</title>
+</head>
+
+<img src="cr.png" alt="" srcset="" style="width: 200; position: absolute;">
+
+<body onload="table15x15()">
+    <div class="main">
+        <header class="header">
+            <h1>Tabel creation</h1>
+        </header>
+        <hr>
+
+
+        <div class="input-form">
+            <form action="#">
+                <label for="row">How many Rows?</label>
+                <input id="row" type="number">
+                <label style="margin-left: 20px;" for="row">How many Columns?</label>
+                <input id="col" type="number"><br><br>
+                <button type="reset" class="button button1" id="reset" onclick="location.reload();">reset</button>
+                <button class="button button1" id="make" onclick="createTable();">create</button>
+            </form>
+        </div>
+
+        <div class="display">
+            <span style="padding:15px; ">
+                <table style="margin: auto; width: auto;" border="solid 1px" id="table">
+
+                </table>
+                <table style="margin:auto; width: auto;" border="solid 1px" id="tempTable">
+
+                </table>
+            </span>
+
+        </div>
+
+
+
+        <div class="display" style="text-align: center;">
+
+
+            <span style="padding:15px; margin-left:  300px; width: auto;">
+                <table style="margin:auto; width: auto;" border="solid 1px" id="tempTable">
+
+                </table>
+            </span>
+
+        </div>
+
+
+
+    </div>
+    <footer style="position: fixed; margin-left: 500px; text-align: center;">
+        &copy;&nbsp; HIL PATEL, Student ID
+        301215094 - COMP125 - Winter 2022
+    </footer>
+   
+</body>
+
+
+<script src="assignment2.js"></script>
+
+</html>
